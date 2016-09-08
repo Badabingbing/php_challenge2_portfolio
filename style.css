@@ -1,20 +1,9 @@
-ul {
-	list-style-type: none;
-	/*position: fixed;
-	top: 0;
-	width: 100%;*/
+.nav {
+	text-align: right;
+	padding-right: 2em;
 }
 
-li {/*display: inline;*/}
-
-li a {
-	display: inline;
-}
-
-li a.active {
-
-}
-
-li a:hover:not(.active) {
-	background-color: red;
+a {
+	text-decoration: none;
+	padding-right: 3em;
 }
