@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio | Valentin Susset</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Valentin Susset</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<div class="nav">
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Skills</a>
-		<a href="#">Projects</a>
-		<a href="#">Contact</a>
+<body>	
+	<input type="checkbox" id="sidebartoggler">	
+	<div class="page-wrap">		
+		<label for="sidebartoggler" class="toggle">☰</label>
+		<div class="container">
+			<div class="header">
+				<h1>Valentin Susset</h1>
+				<h2>Web developer</h2>
+			</div>
+		</div>		
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a class='current' href="index.html">Home</a>
+				</li>	
+				<li>
+					<a class='' href="about.html">About</a>
+				</li>
+				<li>
+					<a class='' href="skills.html">Skills</a>
+				</li>
+				<li>
+					<a class='' href="projects.html">Projects</a>
+				</li>			
+				<li>
+					<a class='' href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
 	</div>
 
-	<!-- home -->
-	<div class="">
-		<h2>Valentin Susset</h2>
-		<h5>Web Developer</h5>
-	</div>
-
-	<!-- about -->
-	<div class="">
-		<h3>About</h3>
-		<p>Lorem ipsum dolort nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia des.<br>
-		Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat.</p>
-	</div>
-
-	<!-- skills -->
-	<div class="">
-		<h3>Skills</h3>
-		<p>orem ipsum dolort nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des.
-Excepteur sint occaeca</p>
-
-	</div>
-
-	<!-- projects -->
-	<div class="">
-		<h3>Projects</h3>
-		<div class="projects">project 1</div>
-		<div class="projects">project 2</div>
-	</div>
-
-	<!-- contacts -->
-	<div class="">
-		<h3>Contacts</h3>
-		<form>
-			<p>Name :</p>
-			<input type="text"></input>
-			<p>E-mail Address :</p>
-			<input type="text"></input>
-			<p>Message :</p>
-			<textarea rows="4" cols="50"></textarea><br>
-			<input type="submit" value="Send the message"></input>
-		</form>
-	</div>
-<script type="text/javascript" src="script.js"></script>
 </body>
-</html>
+</html>	
