@@ -77,6 +77,13 @@ p {
 	letter-spacing: .08rem;
 }
 
+p a {
+	text-decoration: none;
+	color: #268bd2;
+	padding: 5px 2px;
+	border-bottom: 1px solid #268bd2;
+}
+
 ul {
 	margin-bottom: 2rem;
 	font-size: 1.2rem;
@@ -117,11 +124,6 @@ hr {
 	padding: 1rem 1.5rem;
 }
 
-.about p span {
-	color: #268bd2;
-	font-weight: 900;
-	font-style: italic;
-}
 
 /*	Navigation Menu */
 
