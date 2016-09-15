@@ -21,6 +21,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* style commun à toutes les pages */
+
 @font-face {
   font-family: "Roboto Light";
   src: url(font/Roboto-Light.ttf) format("truetype");
@@ -29,8 +31,7 @@ time, mark, audio, video {
 }
 
 html {
-	background: linear-gradient(to left, #4b6cb7 , #182848);
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -39,24 +40,56 @@ html {
 
 body {
 	font-family: "Roboto Light", sans-serif;
-	font-weight: 300;
+	font-size: 100%;
 	letter-spacing: .1rem;
-	line-height: 1.2;
-	color: #fff;
+	line-height: 1.4;
+	color: #222;
+	background-color: #F6F6EF;
 }
 
-.container {
+.wrapper {
 	position: relative;
 	z-index: 0;
-	padding-left: 2rem;
 	width: 100%;
+	max-width: 700px;
+	margin: 1% 4% 2%;
+	padding: 1rem;
 }
 
-.header {
-	position: relative;
-	top: 32vh;
+header {
+	padding: 1rem 1.5rem;
 }
 
+header h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 4rem 0 1rem;
+}	
+
+p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	line-height: 1.8;
+	letter-spacing: .08rem;
+}
+
+ul {
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	letter-spacing: .08rem;
+	list-style-position: inside;
+	padding-left: 1rem;
+	list-style: disc;
+}
+
+li ul {
+	list-style: circle;	
+}
 
 li a {
 	text-decoration: none;
@@ -71,24 +104,31 @@ li a:hover {
 	margin-bottom: -2px;
 }
 
-h1 {
-	font-size: 5.5rem;
-	font-weight: 300;
-	letter-spacing: .5rem;
-	margin-bottom: 0;
-	/*text-transform: uppercase;*/
+hr {
+	border: 0;
+  	height: 1px;
+  	background: #bbb;
+  	margin: 1rem 0;
 }
 
-h2 {
-	font-size: 2.17rem;
-	font-weight: 300;
-	margin-top: 0;
+/* About Page */
+
+.about {
+	padding: 1rem 1.5rem;
 }
+
+.about p span {
+	color: #268bd2;
+	font-weight: 900;
+	font-style: italic;
+}
+
+/*	Navigation Menu */
 
 .toggle {
 	text-decoration: none;
 	font-size: 3rem;
-	color: #FFF;
+	color: #444;
 	position: fixed;
 	top: 2rem;
 	right: 2rem;
@@ -115,7 +155,7 @@ h2 {
 }
 
 .sidebar  ul li {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .sidebar  li a {
@@ -140,17 +180,23 @@ h2 {
 	right: 16rem;
 }
 
-/*  responsive */
+/* responsive */
+
 
 @media (max-width: 600px) {	
-	.container {padding-left: 1rem;}
-	.heading {top: 35vh;}
-	h1 {font-size: 3rem;}
-	h2 {font-size: 1.5rem;}	
+	header h1 {
+		font-size: 3rem;
+	}	
+	.wrapper {
+		width: 100%;
+		margin: 1% 0% 2%;
+    padding: 1.8rem 0 0 0; 
+	}
+
 	.toggle {
 		font-size: 2rem;
 		top: 1rem;
+		right: 2rem;
 	}
 
 }
-
